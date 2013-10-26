@@ -45,8 +45,8 @@
   {
     $document = Document::findSlug($slug);
 
-    return View::make('document')
-      -&gt;with(compact('document'));
+    return View::make('document',
+      compact('document'));
   });
       </code></pre>
     </div>
