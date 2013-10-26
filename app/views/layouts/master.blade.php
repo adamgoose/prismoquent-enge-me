@@ -12,7 +12,7 @@
       <script src="/assets/js/respond.min.js"></script>
     <![endif]-->
   </head>
-  <body>
+  <body onload="prettyPrint()">
 
     <div id="leader">
       <h1>Prismoquent</h1>
@@ -50,5 +50,7 @@
 
     <script src="//code.jquery.com/jquery.js"></script>
     <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+    <script src="/assets/js/prettify.js"></script>
+
   </body>
 </html>

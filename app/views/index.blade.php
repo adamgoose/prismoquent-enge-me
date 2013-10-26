@@ -24,22 +24,22 @@
   <p class="lead">Combining two phenomenal technologies in an effor to re-define the CMS.</p>
 </div>
 
-<div class="container">
+<div class="container large">
   <div class="row">
     <div class="col-sm-4">
       <h3>The Model</h3>
-      <pre>&lt;?php
+      <pre class="prettyprint linenums"><code>&lt;?php
 
   class Document extends Adamgoose\PrismicIo\Model {
 
     protected $endpoint = 'https://prismoquent.prismic.io/api';
     protected $token = 'my-api-token';
 
-  }</pre>
+  }</code></pre>
     </div>
     <div class="col-sm-4">
       <h3>The Call</h3>
-      <pre>&lt;?php
+      <pre class="prettyprint linenums"><code>&lt;?php
 
   Route::get('{slug}', function()
   {
@@ -48,17 +48,17 @@
     return View::make('document')
       -&gt;with(compact('document'));
   });
-      </pre>
+      </code></pre>
     </div>
     <div class="col-sm-4">
       <h3>The Object</h3>
-      <pre>&lt;h1&gt;&#123;&#123;$document->getText('document.title')&#125;&#125;&lt;/h1&gt;
+      <pre class="prettyprint linenums"><code>&lt;h1&gt;&#123;&#123;$document->getText('document.title')&#125;&#125;&lt;/h1&gt;
 
 &#123;&#123;$document->get('document.body')->asHtml()&#125;&#125;
 
 &#64;if($document->getBoolean('document.allow_comments'))
   &lt;div id="disqus"&gt;&lt;/div&gt;
-&#64;endif</pre>
+&#64;endif</code></pre>
     </div>
   </div>
 </div>
