@@ -29,7 +29,6 @@
     <div class="col-sm-4">
       <h3>The Model</h3>
       <pre class="prettyprint linenums"><code>&lt;?php
-
   class Document extends Adamgoose\PrismicIo\Model {
 
     protected $endpoint = 'https://prismoquent.prismic.io/api';
@@ -45,8 +44,8 @@
   {
     $document = Document::findSlug($slug);
 
-    return View::make('document',
-      compact('document'));
+    return View::make('document')
+           ->with(compact('document'));
   });
       </code></pre>
     </div>

@@ -6,6 +6,7 @@
 
     <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="/assets/css/custom.css">
+    <link rel="stylesheet" href="/assets/css/prettifier.css">
 
     <!--[if lt IE 9]>
       <script src="/assets/js/html5shiv.js"></script>
