@@ -49,6 +49,20 @@ Route::filter('auth.basic', function()
 	return Auth::basic();
 });
 
+Route::filter('cache.get', function($route, $request)
+{
+	$cacheKey = md5($request->url());
+
+	if(Cache::has($cacheKey)) return Cache::get($cacheKey);
+});
+
+Route::filter('cache.put', function($route, $request, $response)
+{
+	$cacheKey = md5($request->url());
+
+	if( ! Cache::has($cacheKey)) Cache::put($cacheKey, $response->getContent(), 60);
+});
+
 /*
 |--------------------------------------------------------------------------
 | Guest Filter

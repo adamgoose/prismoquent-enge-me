@@ -31,12 +31,12 @@
 
         <div class="collapse navbar-collapse navbar-ex1-collapse">
           <ul class="nav navbar-nav">
-            <li class="active"><a href="/">Home</a></li>
-            <li><a href="/install">Installation</a></li>
-            <li><a href="/usage">Usage</a></li>
-            <li><a href="/examples">Examples</a></li>
-            <li><a href="/api">API</a></li>
-            <li><a href="/contribute">Contributing</a></li>
+            <li class="{{Request::is('/') ? "active" : ""}}"><a href="/">Home</a></li>
+            <li class="{{Request::is('installation') ? "active" : ""}}"><a href="/installation">Installation</a></li>
+            <li class="{{Request::is('usage') ? "active" : ""}}"><a href="/usage">Usage</a></li>
+            <li class="{{Request::is('examples') ? "active" : ""}}"><a href="/examples">Examples</a></li>
+            <li class="{{Request::is('api') ? "active" : ""}}"><a href="/api">API</a></li>
+            <li class="{{Request::is('contribute') ? "active" : ""}}"><a href="/contribute">Contribute</a></li>
           </ul>
           <ul class="nav navbar-nav pull-right">
             <li class="logo prismic"><a href="http://prismic.io" target="_blank"></a></li>

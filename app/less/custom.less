@@ -1,10 +1,12 @@
+@purple = #674069;
+
 body {
   background-image: url(/assets/img/p6.png);
 }
 
 #leader {
   height: 260px;
-  background-color: #674069;
+  background-color: @purple;
   color: white;
   overflow: hidden;
   h1 {
@@ -36,5 +38,30 @@ body {
     &:hover {
       background: url(/assets/img/laravel_small.png);
     }
+  }
+}
+
+.math-header {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  h3 {
+    font-weight: 300;
+  }
+  .math {
+    font-size: 130px;
+    font-weight: 100;
+  }
+  a {
+    color: black;
+  }
+}
+
+.alt {
+  background-color: @purple;
+  color: white;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  .lead {
+    margin-top: 20px;
   }
 }

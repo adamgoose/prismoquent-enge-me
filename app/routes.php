@@ -11,7 +11,23 @@
 |
 */
 
-Route::get('/', function()
+Route::group(['before' => 'cache.get', 'after' => 'cache.put'], function()
 {
-	return View::make('index');
+
+  Route::get('/', function()
+  {
+  	return View::make('index');
+  });
+
+  Route::get('{slug}', function($slug)
+  {
+    $page = Page::findSlug($slug);
+
+    if(!($page instanceof Prismic\Document))
+      App::abort(404);
+
+    return View::make('page')
+      ->with('page', $page);
+  });
+
 });
