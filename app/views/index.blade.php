@@ -24,7 +24,7 @@
   <p class="lead">Combining two phenomenal technologies in an effor to re-define the CMS.</p>
 </div>
 
-<div class="container large">
+<div class="container">
   <div class="row">
     <div class="col-sm-4">
       <h3>The Model</h3>
