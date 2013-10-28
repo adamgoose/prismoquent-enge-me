@@ -31,3 +31,9 @@ Route::group(['before' => 'cache.get', 'after' => 'cache.put'], function()
   });
 
 });
+
+Route::get('cache/clear', function()
+{
+  Cache::flush();
+  return Redirect::to('/');
+});
