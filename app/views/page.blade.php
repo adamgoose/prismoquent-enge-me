@@ -11,7 +11,7 @@
       <div class="col-sm-9">
         <h2>{{$page->get('doc.title')->asText()}}</h2>
         
-        {{$page->get('doc.content')->asHtml()}}
+        {{preg_replace('/\`(.*?)\`/', '<code>$1</code>', $page->get('doc.content')->asHtml())}}
       </div>
     </div>
   </div>

@@ -805,12 +805,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/framework.git",
-                "reference": "9cf9bd917cbac060ebeb46893b5a1364c9529265"
+                "reference": "a2012db9710e8dbe4732288683fc1044c7b2d628"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/framework/zipball/9cf9bd917cbac060ebeb46893b5a1364c9529265",
-                "reference": "9cf9bd917cbac060ebeb46893b5a1364c9529265",
+                "url": "https://api.github.com/repos/laravel/framework/zipball/a2012db9710e8dbe4732288683fc1044c7b2d628",
+                "reference": "a2012db9710e8dbe4732288683fc1044c7b2d628",
                 "shasum": ""
             },
             "require": {
@@ -910,7 +910,7 @@
                 "framework",
                 "laravel"
             ],
-            "time": "2013-10-24 16:24:18"
+            "time": "2013-10-28 20:03:10"
         },
         {
             "name": "leafo/lessphp",
@@ -954,12 +954,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Seldaek/monolog.git",
-                "reference": "c600461b0f1a8943696f931fc11db475193f62cd"
+                "reference": "0f3c054dff866aa687ab07572b731fb2ba32e703"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Seldaek/monolog/zipball/c600461b0f1a8943696f931fc11db475193f62cd",
-                "reference": "c600461b0f1a8943696f931fc11db475193f62cd",
+                "url": "https://api.github.com/repos/Seldaek/monolog/zipball/0f3c054dff866aa687ab07572b731fb2ba32e703",
+                "reference": "0f3c054dff866aa687ab07572b731fb2ba32e703",
                 "shasum": ""
             },
             "require": {
@@ -1009,7 +1009,7 @@
                 "logging",
                 "psr-3"
             ],
-            "time": "2013-10-24 12:32:52"
+            "time": "2013-10-28 09:41:17"
         },
         {
             "name": "nesbot/carbon",
@@ -1798,12 +1798,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/HttpKernel.git",
-                "reference": "cc1dab5ef88e9bdaa6e5e0b4df921ab0d793f68d"
+                "reference": "dce9c5096d8f1460af901e3899f88e9d3c1cec1b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/HttpKernel/zipball/cc1dab5ef88e9bdaa6e5e0b4df921ab0d793f68d",
-                "reference": "cc1dab5ef88e9bdaa6e5e0b4df921ab0d793f68d",
+                "url": "https://api.github.com/repos/symfony/HttpKernel/zipball/dce9c5096d8f1460af901e3899f88e9d3c1cec1b",
+                "reference": "dce9c5096d8f1460af901e3899f88e9d3c1cec1b",
                 "shasum": ""
             },
             "require": {
@@ -1860,7 +1860,7 @@
             ],
             "description": "Symfony HttpKernel Component",
             "homepage": "http://symfony.com",
-            "time": "2013-10-10 14:16:40"
+            "time": "2013-10-28 14:46:04"
         },
         {
             "name": "symfony/process",
@@ -1869,12 +1869,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/Process.git",
-                "reference": "81191e354fe9dad0451036ccf0fdf283649d3f1e"
+                "reference": "c1c6c1f668b1255c5936e6596d3c5e50a3d8ed13"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/Process/zipball/81191e354fe9dad0451036ccf0fdf283649d3f1e",
-                "reference": "81191e354fe9dad0451036ccf0fdf283649d3f1e",
+                "url": "https://api.github.com/repos/symfony/Process/zipball/c1c6c1f668b1255c5936e6596d3c5e50a3d8ed13",
+                "reference": "c1c6c1f668b1255c5936e6596d3c5e50a3d8ed13",
                 "shasum": ""
             },
             "require": {
@@ -1907,7 +1907,7 @@
             ],
             "description": "Symfony Process Component",
             "homepage": "http://symfony.com",
-            "time": "2013-10-09 21:17:57"
+            "time": "2013-10-26 07:52:48"
         },
         {
             "name": "symfony/routing",

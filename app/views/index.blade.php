@@ -28,7 +28,7 @@
   <div class="row">
     <div class="col-sm-4">
       <h3>The Model</h3>
-      <pre class="prettyprint linenums"><code>&lt;?php
+      <pre class="prettyprint"><code>&lt;?php
   class Document extends Adamgoose\PrismicIo\Model {
 
     protected $endpoint = 'https://prismoquent.prismic.io/api';
@@ -38,7 +38,7 @@
     </div>
     <div class="col-sm-4">
       <h3>The Call</h3>
-      <pre class="prettyprint linenums"><code>&lt;?php
+      <pre class="prettyprint"><code>&lt;?php
 
   Route::get('{slug}', function()
   {
@@ -51,7 +51,7 @@
     </div>
     <div class="col-sm-4">
       <h3>The Object</h3>
-      <pre class="prettyprint linenums"><code>&lt;h1&gt;&#123;&#123;$document->getText('document.title')&#125;&#125;&lt;/h1&gt;
+      <pre class="prettyprint"><code>&lt;h1&gt;&#123;&#123;$document->getText('document.title')&#125;&#125;&lt;/h1&gt;
 
 &#123;&#123;$document->get('document.body')->asHtml()&#125;&#125;
 
