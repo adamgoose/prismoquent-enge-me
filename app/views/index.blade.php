@@ -29,33 +29,36 @@
     <div class="col-sm-4">
       <h3>The Model</h3>
       <pre class="prettyprint"><code>&lt;?php
-  class Document extends Adamgoose\PrismicIo\Model {
+use Adamgoose\PrismicIo\Model;
+class Document extends Model {
 
-    protected $endpoint = 'https://prismoquent.prismic.io/api';
-    protected $token = 'my-api-token';
+  protected $endpoint = 'my-endpoint-url';
+  
+  protected $token = 'my-api-token';
 
-  }</code></pre>
+}</code></pre>
     </div>
     <div class="col-sm-4">
       <h3>The Call</h3>
       <pre class="prettyprint"><code>&lt;?php
 
-  Route::get('{slug}', function()
-  {
-    $document = Document::findSlug($slug);
+Route::get('{slug}', function()
+{
+  $document = Document::findSlug($slug);
 
-    return View::make('document')
-           ->with(compact('document'));
-  });
-      </code></pre>
+  return View::make('document')
+         ->with(compact('document'));
+});</code></pre>
     </div>
     <div class="col-sm-4">
       <h3>The Object</h3>
-      <pre class="prettyprint"><code>&lt;h1&gt;&#123;&#123;$document->getText('document.title')&#125;&#125;&lt;/h1&gt;
+      <pre class="prettyprint"><code>&lt;h1&gt;
+  &#123;&#123;$document->title&#125;&#125;
+&lt;/h1&gt;
 
-&#123;&#123;$document->get('document.body')->asHtml()&#125;&#125;
+&#123;&#123;$document->body&#125;&#125;
 
-&#64;if($document->getBoolean('document.allow_comments'))
+&#64;if($document->allow_comments == 'yes')
   &lt;div id="disqus"&gt;&lt;/div&gt;
 &#64;endif</code></pre>
     </div>
