@@ -16,7 +16,9 @@
   <body onload="prettyPrint()">
 
     <div id="leader">
-      <h1>Prismoquent</h1>
+      <div class="container">
+        <h1>Prismoquent</h1>
+      </div>
     </div>
 
     <nav class="navbar navbar-inverse" role="navigation">
