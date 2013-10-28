@@ -21,7 +21,7 @@
 </div>
 
 <div class="row text-center alt">
-  <p class="lead">Combining two phenomenal technologies in an effor to re-define the CMS.</p>
+  <p class="lead">Combining two phenomenal technologies in an effort to re-define the CMS.</p>
 </div>
 
 <div class="container">
