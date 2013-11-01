@@ -52,6 +52,15 @@
 
     @yield('content')
 
+    <div class="alt" style="margin-top: 50px;padding-top: 15px;">
+      <div class="container">
+        <p class="pull-left">&copy; 2013 <span class="dannenga">dannenga., LLC</span></p>
+        <p class="pull-right"><a href="http://blog.enge.me" target="_blank" style="color: white;">Adam's Blog</a></p>
+
+        <div class="clearfix"></div>
+      </div>
+    </div>
+
     <script src="//code.jquery.com/jquery.js"></script>
     <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
     <script src="/assets/js/prettify.js"></script>
