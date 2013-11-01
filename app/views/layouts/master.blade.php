@@ -42,6 +42,7 @@
             <li class="{{Request::is('contribute') ? "active" : ""}}"><a href="/contribute">Contribute</a></li>
           </ul>
           <ul class="nav navbar-nav pull-right">
+            <li><a href="http://github.com/adamgoose/prismic-io" target="_blank" style="font-size: 20px;"><span class="fa fa-github"></span></a></li>
             <li class="logo prismic"><a href="http://prismic.io" target="_blank"></a></li>
             <li class="logo laravel"><a href="http://laravel.com" target="_blank"></a></li>
           </ul>
@@ -56,6 +57,15 @@
     <script src="/assets/js/prettify.js"></script>
 
     @yield('scripts')
+
+    <script>
+      !function(g,s,q,r,d){r=g[r]=g[r]||function(){(r.q=r.q||[]).push(
+      arguments)};d=s.createElement(q);q=s.getElementsByTagName(q)[0];
+      d.src='//d1l6p2sc9645hc.cloudfront.net/tracker.js';q.parentNode.
+      insertBefore(d,q)}(window,document,'script','_gs');
+      
+      _gs('GSN-612106-X');
+    </script>
 
   </body>
 </html>

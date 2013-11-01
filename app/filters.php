@@ -53,7 +53,7 @@ Route::filter('cache.get', function($route, $request)
 {
 	$cacheKey = md5($request->url());
 
-	if(Cache::has($cacheKey)) return Cache::get($cacheKey);
+	if(Cache::has($cacheKey) && !Config::get('app.debug')) return Cache::get($cacheKey);
 });
 
 Route::filter('cache.put', function($route, $request, $response)
