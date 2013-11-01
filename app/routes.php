@@ -11,7 +11,7 @@
 |
 */
 
-Route::group(['before' => 'cache.get', 'after' => 'cache.put'], function()
+Route::group([], function()
 {
 
   Route::get('/', function()
