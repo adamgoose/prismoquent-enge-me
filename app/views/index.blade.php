@@ -42,7 +42,7 @@ class Document extends Model {
       <h3>The Call</h3>
       <pre class="prettyprint"><code>&lt;?php
 
-Route::get('{slug}', function()
+Route::get('{slug}', function($slug)
 {
   $document = Document::findSlug($slug);
 
